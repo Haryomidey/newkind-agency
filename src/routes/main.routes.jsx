@@ -1,7 +1,7 @@
 import React from 'react';
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
-import Home from '../pages/Home';
+import Home from '../pages/home';
 import ScrollToTop from '../components/ScrollToTop';
 import About from '../pages/About';
 import Services from '../pages/service';
