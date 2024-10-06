@@ -20,6 +20,7 @@ import Career2 from './images/career-2.svg';
 import Work1 from './images/work-1.svg';
 import Work2 from './images/work-2.svg';
 import Work3 from './images/work-3.svg';
+import NotFoundImage from './images/not-found.svg';
 
 
 export {
@@ -44,5 +45,6 @@ export {
     Career2,
     Work1,
     Work2,
-    Work3
+    Work3,
+    NotFoundImage
 }

@@ -25,10 +25,9 @@ const Header = () => {
         <div className='fixed top-0 left-0 w-full h-[80px] header-shadow px-5 sm:px-20 bg-white'>
             <div className='w-full h-full flex items-center justify-between gap-5'>
                 <div className='flex items-center h-full'>
-                    <Link to='/'><img src={Logo} className='w-[100px] sm:w-[200px]' alt='Logo image' /></Link>
+                    <Link to='/'><img src={Logo} className='w-[110px] sm:w-[200px] object-cover' alt='Logo image' /></Link>
                 </div>
 
-                {/* Desktop Menu */}
                 <div className='w-[65%] items-center justify-between hidden lg:flex'>
                     <ul className='flex items-center gap-8'>
                         <li>
@@ -52,7 +51,6 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu Toggle */}
                 <div className='block lg:hidden'>
                     {isNavbar ? (
                         <IoMdClose className='text-2xl cursor-pointer' onClick={() => setIsNavbar(false)} />
@@ -62,7 +60,6 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
             <div
                 ref={navRef}
                 className={`lg:hidden fixed top-0 left-0 w-[65%] sm:w-[50%] h-full bg-white shadow-md transition-transform duration-300 ${isNavbar ? 'translate-x-0' : '-translate-x-full'}`}

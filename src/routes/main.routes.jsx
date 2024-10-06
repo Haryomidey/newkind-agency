@@ -9,6 +9,7 @@ import Blogs from '../pages/blogs';
 import Career from '../pages/career';
 import Work from '../pages/work';
 import Contact from '../pages/contact';
+import NotFound from '../pages/error/NotFound';
 
 function MainLayout({ children }) {
   return (
@@ -73,6 +74,14 @@ const router = createHashRouter([
     element: (
       <MainLayout>
         <Contact />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <MainLayout>
+        <NotFound />
       </MainLayout>
     ),
   },
