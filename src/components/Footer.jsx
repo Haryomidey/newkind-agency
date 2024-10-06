@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='bg-[#4f4aec] w-full px-5 sm:px-20 pt-10 text-white'>
-            <div className='min-h-[500px] flex items-center justify-between flex-wrap text-xs sm:text-sm'>
+            <div className='min-h-[500px] flex justify-between flex-wrap text-xs sm:text-sm'>
                 <div className='flex flex-col gap-4'>
                     <img src={FooterLogo} alt="footer logo" className='w-[100px] sm:w-[120px] mb-7' />
                     <p>No 200, ikola street, Iyanyu Ipaja, Lagos</p>
