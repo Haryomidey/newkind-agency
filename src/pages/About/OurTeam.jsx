@@ -10,8 +10,8 @@ const OurTeam = () => {
             <h1 className='text-xl sm:text-3xl'>Meet Our Team</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 mt-6'>
                 {
-                    Content.map((content) => (
-                        <div className='min-h-[300px]'>
+                    Content.map((content, index) => (
+                        <div key={index} className='min-h-[300px]'>
                             <div className='bg-[#00000071] h-[300px]'>
                                 <img src={content.image} alt="" className='w-full h-full object-cover' />
                             </div>

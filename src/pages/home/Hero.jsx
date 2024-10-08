@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import {HeroImage} from '../../assets/index';
 import Button from '../../components/Button';
 
@@ -19,7 +20,7 @@ const Hero = () => {
                 <div className='lg:max-w-[60%] text-center lg:text-left'>
                     <h1 className='text-2xl sm:text-4xl lg:text-6xl mb-4 font-semibold lg:font-bold'>Shaping Brand Experiences Through Storytelling</h1>
                     <p>Businesses come to us as their starting point to innovate, shape, reimagine ideas, and create unforgettable experiences and products pushing beyond the limits of what's possible with storytelling.</p>
-                    <Button className='mt-5'>Let's Talk</Button>
+                    <Link to='/contact-us'><Button className='mt-5'>Let's Talk</Button></Link>
                 </div>
             </div>
         </section>

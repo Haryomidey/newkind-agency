@@ -17,10 +17,27 @@ button, textarea, input, select, a{
   outline: none;
 }
 
-.header-shadow{
+.header a.active{
+  background: #4F48EC;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+
+.header{
   box-shadow: 0px 1px 6px #afafaf3d;
 }
 
 .raleway{
   font-family: 'Raleway', sans-serif;
+}
+
+.spin{
+  animation: spin 0.5s linear 0s infinite;
+}
+
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
 }

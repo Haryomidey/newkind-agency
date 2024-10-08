@@ -15,7 +15,7 @@ const Blogs = () => {
             />
             <div className='w-full py-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 min-h-[800px] px-5 sm:px-20'>
                 {Content.map((content, index) => (
-                    <div className='min-h-[350px]'>
+                    <div className='min-h-[350px]' key={index}>
                         <div className='h-[350px]'>
                             <img src={content.image} alt="" className='rounded-md w-full h-full object-cover' />
                         </div>

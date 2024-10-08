@@ -10,7 +10,7 @@ const OurServices = () => {
             <HeadingTitle>Our Services</HeadingTitle>
             <div className='flex justify-between'>
                 <p className='max-w-[750px]'>We partner with clients to develop memorable brands that create connection and inspire change.</p>
-                <Link>See All</Link>
+                <Link to='/services' className='hover:underline text-primary'>See All</Link>
             </div>
             <div className='grid sm:grid-cols-2 lg:grid-cols-4 mt-5 gap-1'>
                 {
@@ -22,7 +22,7 @@ const OurServices = () => {
                 }
             </div>
             <div className='flex items-center justify-center my-6'>
-                <Button>Let's Talk</Button>
+                <Link to='/contact-us'><Button className='mt-5'>Let's Talk</Button></Link>
             </div>
         </div>
     )
