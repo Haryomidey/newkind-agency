@@ -22,7 +22,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='fixed top-0 left-0 w-full h-[80px] header px-5 sm:px-20 bg-white'>
+        <div className='fixed top-0 left-0 w-full h-[80px] header px-5 sm:px-20 bg-white z-[111]'>
             <div className='w-full h-full flex items-center justify-between gap-5'>
                 <div className='flex items-center h-full'>
                     <Link to='/'><img src={Logo} className='w-[110px] sm:w-[200px] object-cover' alt='Logo image' /></Link>
