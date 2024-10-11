@@ -74,7 +74,7 @@ const KindredCaseStudy = () => {
                         <img src={Work2} alt="" className='min-w-full w-full object-cover' />
                     </div>
                     <div className='w-full lg:w-[49%] h-[450px] flex flex-col gap-5'>
-                        <div className='h-[220px] bg-black rounded-lg' onClick={() => handlePlayVideo(videoRef1)}>
+                        <div className='h-[220px] bg-black rounded-lg cursor-pointer' onClick={() => handlePlayVideo(videoRef1)}>
                             <video ref={videoRef1} className='w-full h-full'>
                                 <source src={Video1}/>
                             </video>
@@ -100,7 +100,7 @@ const KindredCaseStudy = () => {
                     </div>
                 </div>
                 <div className='w-full min-h-[450px] flex items-center justify-between flex-wrap lg:flex-nowrap gap-5 mt-10 mb-20'>
-                    <div className='w-full lg:w-[49%] h-[450px] overflow-hidden bg-primary rounded-lg' onClick={() => handlePlayVideo(videoRef2)}>
+                    <div className='w-full lg:w-[49%] h-[450px] overflow-hidden bg-primary rounded-lg cursor-pointer' onClick={() => handlePlayVideo(videoRef2)}>
                         <video ref={videoRef2} className='w-full h-full'>
                             <source src={Video2}/>
                         </video>
@@ -147,7 +147,7 @@ const KindredCaseStudy = () => {
                         </p>
                     </div>
                 </div>
-                <div className='h-[500px] w-full mt-16 mb-5 bg-primary flex items-center justify-center rounded-lg overflow-hidden' onClick={() => handlePlayVideo(videoRef3)}>
+                <div className='h-[500px] w-full mt-16 mb-5 bg-primary flex items-center justify-center rounded-lg overflow-hidden cursor-pointer' onClick={() => handlePlayVideo(videoRef3)}>
                     <video ref={videoRef3} className='min-w-full w-full h-full'>
                         <source src={Video3}/>
                     </video>
