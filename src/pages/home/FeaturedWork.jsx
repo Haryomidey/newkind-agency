@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import HeadingTitle from '../../components/HeadingTitle'
 import { FeaturedWorkImage, FeaturedWorkImage2 } from '../../assets'
 
@@ -9,7 +9,16 @@ const FeaturedWork = () => {
         setCurrentSlide(index)
     }
 
-    const slideTranslate = `${currentSlide*100}%`;
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prevSlide) => (prevSlide === 0 ? 1 : 0))
+        }, 5000)
+
+        return () => clearInterval(interval) 
+    }, [])
+
+    const slideTranslate = `${currentSlide * 100}%`
+
     return (
         <div className='w-full px-5 sm:px-20 py-20'>
             <div className='mx-auto max-w-[900px] text-center'>
