@@ -11,6 +11,10 @@ import Work from '../pages/work';
 import Contact from '../pages/contact';
 import NotFound from '../pages/error/NotFound';
 import PrivacyPolicy from '../pages/privacy-policy';
+import KindredCaseStudy from '../pages/case-study';
+import BlogOne from '../pages/blog-1';
+import BlogTwo from '../pages/blog-2';
+import BlogThree from '../pages/blog-3';
 
 function MainLayout({ children }) {
   return (
@@ -83,6 +87,38 @@ const router = createHashRouter([
     element: (
       <MainLayout>
         <PrivacyPolicy />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/blogs/new-kindred-case-study",
+    element: (
+      <MainLayout>
+        <KindredCaseStudy />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/blogs/blog-1",
+    element: (
+      <MainLayout>
+        <BlogOne />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/blogs/blog-2",
+    element: (
+      <MainLayout>
+        <BlogTwo />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/blogs/blog-3",
+    element: (
+      <MainLayout>
+        <BlogThree />
       </MainLayout>
     ),
   },

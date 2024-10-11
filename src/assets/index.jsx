@@ -30,6 +30,14 @@ import Work9 from './images/work-9.svg';
 import Work10 from './images/work-10.svg';
 import Work11 from './images/work-11.svg';
 import NotFoundImage from './images/not-found.svg';
+import Medsync from './images/medsync.svg';
+import Phantom from './images/phantom.svg';
+import Blog1Full from './images/blog-1-full.svg';
+import Blog2Full from './images/blog-2-full.svg';
+import Blog3Full from './images/blog-3-full.svg';
+import Blog1Image1 from './images/blog-1-image-1.svg';
+import Blog2Image1 from './images/blog-2-image-1.svg';
+import Blog3Image1 from './images/blog-3-image-1.svg';
 
 
 export {
@@ -64,5 +72,13 @@ export {
     Work9,
     Work10,
     Work11,
-    NotFoundImage
+    NotFoundImage,
+    Medsync,
+    Phantom,
+    Blog1Full,
+    Blog2Full,
+    Blog3Full,
+    Blog1Image1,
+    Blog2Image1,
+    Blog3Image1
 }

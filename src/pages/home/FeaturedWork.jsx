@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import HeadingTitle from '../../components/HeadingTitle'
-import { FeaturedWorkImage, FeaturedWorkImage2 } from '../../assets'
+import { Medsync, FeaturedWorkImage2 } from '../../assets'
 
 const FeaturedWork = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -42,15 +42,15 @@ const FeaturedWork = () => {
                     >
                         <div
                             style={{
-                                backgroundImage: `url(${FeaturedWorkImage})`,
+                                backgroundImage: `url(${Medsync})`,
                                 backgroundPosition: 'center',
                                 backgroundSize: 'cover',
                                 height: '500px',
                             }}
                             className='min-w-full mt-6 flex justify-center px-7 text-white flex-col rounded-lg sm:rounded-3xl sm:text-left text-center'
                         >
-                            <h2 className='text-2xl mb-3'>Footprint World Al</h2>
-                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p>
+                            {/* <h2 className='text-2xl mb-3'>Footprint World Al</h2>
+                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p> */}
                         </div>
                         <div
                             style={{
@@ -61,8 +61,8 @@ const FeaturedWork = () => {
                             }}
                             className='min-w-full mt-6 flex justify-center px-7 text-white flex-col rounded-lg sm:rounded-3xl sm:text-left text-center'
                         >
-                            <h2 className='text-2xl mb-3'>Footprint World Al</h2>
-                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p>
+                            {/* <h2 className='text-2xl mb-3'>Footprint World Al</h2>
+                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p> */}
                         </div>
                     </div>
                 </div>

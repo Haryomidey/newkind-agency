@@ -6,11 +6,12 @@ import Hero from './Hero';
 import OurServices from './OurServices';
 import FeaturedWork from './FeaturedWork';
 import ReadyToWork from './ReadyToWork';
+import HomeHeader from '../../components/HomeHeader';
 
 const Home = () => {
     return (
         <main>
-            <Header />
+            <HomeHeader />
             <Hero />
             <OurIdeology />
             <OurServices />
