@@ -91,7 +91,7 @@ const router = createHashRouter([
     ),
   },
   {
-    path: "/blogs/new-kindred-case-study",
+    path: "/work/new-kindred-case-study",
     element: (
       <MainLayout>
         <KindredCaseStudy />

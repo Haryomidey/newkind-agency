@@ -67,7 +67,7 @@ const Content = [
             'Brand design',
             'Web design'
         ],
-        link: 'blogs/new-kindred-case-study'
+        link: 'work/new-kindred-case-study'
     },
     {
         id: 2,

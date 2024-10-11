@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ReadyToWork from '../home/ReadyToWork'
 import HeroContainer from '../../components/HeroContainer'
-import { FeaturedWorkImage2, Logo, Work1, Work10, Work11, Work2, Work3, Work4, Work5, Work6, Work7, Work8, Work9 } from '../../assets'
+import { FeaturedWorkImage2, Logo, Work1, Work10, Work11, Work2, Work3, Work4, Work5, Work6, Work7, Work8, Work9 } from '../../assets';
+import Video1 from '../../assets/Videos/first.mp4';
+import Video2 from '../../assets/Videos/second.mp4';
+import Video3 from '../../assets/Videos/third.mp4';
 
 const KindredCaseStudy = () => {
+
+    const videoRef1 = useRef(null);
+    const videoRef2 = useRef(null);
+    const videoRef3 = useRef(null);
+    const [currentVideo, setCurrentVideo] = useState(null);
+
+    const handlePlayVideo = (ref) => {
+        if (ref.current) {
+            if (currentVideo && currentVideo !== ref.current) {
+                currentVideo.pause();
+            }
+
+            if (ref.current.paused) {
+                ref.current.play();
+                setCurrentVideo(ref.current);
+            } else {
+                ref.current.pause();
+                setCurrentVideo(null);
+            }
+        }
+    };
+
     return (
         <main>
             <Header />
@@ -49,7 +74,11 @@ const KindredCaseStudy = () => {
                         <img src={Work2} alt="" className='min-w-full w-full object-cover' />
                     </div>
                     <div className='w-full lg:w-[49%] h-[450px] flex flex-col gap-5'>
-                        <div className='h-[220px] bg-black rounded-lg'></div>
+                        <div className='h-[220px] bg-black rounded-lg' onClick={() => handlePlayVideo(videoRef1)}>
+                            <video ref={videoRef1} className='w-full h-full'>
+                                <source src={Video1}/>
+                            </video>
+                        </div>
                         <div className='h-[220px] w-full bg-black rounded-lg overflow-hidden'>
                             <img src={Work3} alt="" className='object-cover' />
                         </div>
@@ -71,7 +100,11 @@ const KindredCaseStudy = () => {
                     </div>
                 </div>
                 <div className='w-full min-h-[450px] flex items-center justify-between flex-wrap lg:flex-nowrap gap-5 mt-10 mb-20'>
-                    <div className='w-full lg:w-[49%] h-[450px] overflow-hidden bg-primary rounded-lg'></div>
+                    <div className='w-full lg:w-[49%] h-[450px] overflow-hidden bg-primary rounded-lg' onClick={() => handlePlayVideo(videoRef2)}>
+                        <video ref={videoRef2} className='w-full h-full'>
+                            <source src={Video2}/>
+                        </video>
+                    </div>
                     <div className='w-full lg:w-[49%] h-[450px] flex flex-col rounded-lg overflow-hidden gap-5'>
                         <img src={Work4} alt="" className='object-cover h-full' />
                     </div>
@@ -114,8 +147,10 @@ const KindredCaseStudy = () => {
                         </p>
                     </div>
                 </div>
-                <div className='h-[500px] w-full mt-16 mb-5 bg-primary flex items-center justify-center rounded-lg overflow-hidden'>
-                    <img src={Work11} alt="" />
+                <div className='h-[500px] w-full mt-16 mb-5 bg-primary flex items-center justify-center rounded-lg overflow-hidden' onClick={() => handlePlayVideo(videoRef3)}>
+                    <video ref={videoRef3} className='min-w-full w-full h-full'>
+                        <source src={Video3}/>
+                    </video>
                 </div>
                 <div className='w-full min-h-[450px] grid sm:grid-cols-2 gap-5 mt-10 mb-20'>
                     <div className='h-[350px] flex flex-col rounded-lg overflow-hidden gap-5'>

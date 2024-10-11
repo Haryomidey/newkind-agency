@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import HeadingTitle from '../../components/HeadingTitle'
 import { Medsync, FeaturedWorkImage2 } from '../../assets'
+import { Link } from 'react-router-dom'
 
 const FeaturedWork = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -40,6 +41,16 @@ const FeaturedWork = () => {
                         }}
                         className='flex w-full h-full transition-transform ease duration-300'
                     >
+                        <Link to='/work/new-kindred-case-study'
+                            style={{
+                                backgroundImage: `url(${FeaturedWorkImage2})`,
+                                backgroundPosition: 'center',
+                                backgroundSize: 'cover',
+                                height: '500px',
+                            }}
+                            className='min-w-full mt-6 flex justify-center px-7 text-white flex-col rounded-lg sm:rounded-3xl sm:text-left text-center'
+                        >
+                        </Link>
                         <div
                             style={{
                                 backgroundImage: `url(${Medsync})`,
@@ -49,20 +60,6 @@ const FeaturedWork = () => {
                             }}
                             className='min-w-full mt-6 flex justify-center px-7 text-white flex-col rounded-lg sm:rounded-3xl sm:text-left text-center'
                         >
-                            {/* <h2 className='text-2xl mb-3'>Footprint World Al</h2>
-                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p> */}
-                        </div>
-                        <div
-                            style={{
-                                backgroundImage: `url(${FeaturedWorkImage2})`,
-                                backgroundPosition: 'center',
-                                backgroundSize: 'cover',
-                                height: '500px',
-                            }}
-                            className='min-w-full mt-6 flex justify-center px-7 text-white flex-col rounded-lg sm:rounded-3xl sm:text-left text-center'
-                        >
-                            {/* <h2 className='text-2xl mb-3'>Footprint World Al</h2>
-                            <p className='text-[12px]'>Innovating Today For A Smarter Tomorrow</p> */}
                         </div>
                     </div>
                 </div>
