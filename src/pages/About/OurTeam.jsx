@@ -34,9 +34,9 @@ const OurTeam = () => {
             </div>
             <div className='flex items-center justify-center min-h-[400px]'>
                 <div className='w-full h-full grid lg:grid-cols-2 gap-16 pb-4'>
-                    <p>In our world saturated with information, where voices and brands compete for attention daily, the art of storytelling often gets drowned out, leaving narratives that lack clarity and authenticity. </p>
-                    <p>However, within this chaos lies a space where truth is palpable, resolution is accurate, and authenticity is relatable. It's where brands can genuinely express themselves, forging true connections with their audience.</p>
-                    <p>What then defines a compelling narrative? It's the fusion of resolution, authenticity, and consistency. Yet, many brands are losing that voice. </p>
+                    <p>At NewKindred, we specialize in building these spaces. Through our approach, we challenge businesses to embody their true essence and become <b>storytellers</b>.</p>
+                    <p>NewKindred is a Branding and Marketing Agency. We partner with and assist businesses in building bold brands, creating immersive experiences, and becoming storytellers.</p>
+                    <p>Our mission is crystal clear to guide businesses in building genuine, relatable brands.</p>
                 </div>
             </div>
         </section>
