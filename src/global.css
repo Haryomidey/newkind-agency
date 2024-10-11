@@ -18,10 +18,20 @@ button, textarea, input, select, a{
 }
 
 .header a.active{
-  background: #4F48EC;
-  color: white;
   padding: 7px 15px;
   border-radius: 10px;
+  position: relative;
+  color: #4F48EC;
+}
+
+.header a.active::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #4F48EC;
+  bottom: -5px;
+  left: 0;
 }
 
 .header{

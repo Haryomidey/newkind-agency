@@ -2,6 +2,7 @@ import Logo from './images/logo.svg';
 import Branding from './images/branding.svg';
 import Development from './images/development.svg';
 import FeaturedWorkImage from './images/featured-work.svg';
+import FeaturedWorkImage2 from './images/featured-work-2.svg';
 import HeroImage from './images/hero.svg';
 import Strategy from './images/strategy.svg';
 import BrandEngagement from './images/brand-engagement.svg';
@@ -28,6 +29,7 @@ export {
     Branding,
     Development,
     FeaturedWorkImage,
+    FeaturedWorkImage2,
     HeroImage,
     Strategy,
     BrandEngagement,

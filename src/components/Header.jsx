@@ -43,7 +43,7 @@ const Header = () => {
                             <NavLink to='/blogs' className='raleway'>Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/career' className='raleway'>Career</NavLink>
+                            <NavLink to='/career' className='raleway'>Careers</NavLink>
                         </li>
                     </ul>
                     <div>
@@ -78,7 +78,7 @@ const Header = () => {
                         <NavLink to='/blogs' className='raleway' onClick={() => setIsNavbar(false)}>Blog</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/career' className='raleway' onClick={() => setIsNavbar(false)}>Career</NavLink>
+                        <NavLink to='/career' className='raleway' onClick={() => setIsNavbar(false)}>Careers</NavLink>
                     </li>
                     <li>
                         <Link to='/contact-us'>

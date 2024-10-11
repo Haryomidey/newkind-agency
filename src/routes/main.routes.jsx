@@ -10,6 +10,7 @@ import Career from '../pages/career';
 import Work from '../pages/work';
 import Contact from '../pages/contact';
 import NotFound from '../pages/error/NotFound';
+import PrivacyPolicy from '../pages/privacy-policy';
 
 function MainLayout({ children }) {
   return (
@@ -74,6 +75,14 @@ const router = createHashRouter([
     element: (
       <MainLayout>
         <Contact />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/privacy-policy",
+    element: (
+      <MainLayout>
+        <PrivacyPolicy />
       </MainLayout>
     ),
   },
