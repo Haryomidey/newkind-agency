@@ -21,6 +21,14 @@ import Career2 from './images/career-2.svg';
 import Work1 from './images/work-1.svg';
 import Work2 from './images/work-2.svg';
 import Work3 from './images/work-3.svg';
+import Work4 from './images/work-4.svg';
+import Work5 from './images/work-5.svg';
+import Work6 from './images/work-6.svg';
+import Work7 from './images/work-7.svg';
+import Work8 from './images/work-8.svg';
+import Work9 from './images/work-9.svg';
+import Work10 from './images/work-10.svg';
+import Work11 from './images/work-11.svg';
 import NotFoundImage from './images/not-found.svg';
 
 
@@ -48,5 +56,13 @@ export {
     Work1,
     Work2,
     Work3,
+    Work4,
+    Work5,
+    Work6,
+    Work7,
+    Work8,
+    Work9,
+    Work10,
+    Work11,
     NotFoundImage
 }

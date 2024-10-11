@@ -17,7 +17,9 @@ const FeaturedWork = () => {
         return () => clearInterval(interval) 
     }, [])
 
-    const slideTranslate = `${currentSlide * 100}%`
+    const slideTranslate = `${currentSlide * 100}%`;
+
+    console.log(slideTranslate)
 
     return (
         <div className='w-full px-5 sm:px-20 py-20'>

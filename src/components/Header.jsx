@@ -28,7 +28,7 @@ const Header = () => {
                     <Link to='/'><img src={Logo} className='w-[110px] sm:w-[200px] object-cover' alt='Logo image' /></Link>
                 </div>
 
-                <div className='w-[65%] items-center justify-between hidden lg:flex'>
+                <div className='w-[70%] items-center justify-between hidden lg:flex'>
                     <ul className='flex items-center gap-8'>
                         <li>
                             <NavLink to='/work' className='raleway'>Work</NavLink>
