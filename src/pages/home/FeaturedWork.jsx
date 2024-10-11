@@ -14,12 +14,10 @@ const FeaturedWork = () => {
             setCurrentSlide((prevSlide) => (prevSlide === 0 ? 1 : 0))
         }, 5000)
 
-        return () => clearInterval(interval) 
+        return () => clearInterval(interval)
     }, [])
 
-    const slideTranslate = `${currentSlide * 100}%`;
-
-    console.log(slideTranslate)
+    const slideTranslate = currentSlide * -100
 
     return (
         <div className='w-full px-5 sm:px-20 py-20'>
@@ -28,7 +26,7 @@ const FeaturedWork = () => {
                 <p>We believe that brands are more than just products; they're stories waiting to be told.</p>
             </div>
             <div className='relative w-full'>
-                <div className='absolute right-[5%] top-[10%] z-[11] text-white cursor-pointer'>
+                <div className='absolute right-[5%] top-[10%] z-[11] text-white cursor-pointer select-none'>
                     <div className='flex items-center gap-3' onClick={() => handleSlideChange(currentSlide === 0 ? 1 : 0)}>
                         <p className={`w-[40px] h-1 bg-white ${currentSlide === 0 ? 'opacity-100' : 'opacity-50'}`}></p>
                         <p className={`w-[40px] h-1 bg-white ${currentSlide === 1 ? 'opacity-100' : 'opacity-50'}`}></p>
@@ -37,7 +35,10 @@ const FeaturedWork = () => {
                 </div>
                 <div className='w-full flex gap-3 overflow-x-hidden'>
                     <div
-                        className={`flex w-full h-full -translate-x-[${slideTranslate}] transition-transform ease duration-300`}
+                        style={{
+                            transform: `translateX(${slideTranslate}%)`,
+                        }}
+                        className='flex w-full h-full transition-transform ease duration-300'
                     >
                         <div
                             style={{
