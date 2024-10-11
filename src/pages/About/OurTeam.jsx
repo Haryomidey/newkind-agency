@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrandDesigner, DevLead, GraphicDesigner, TeamLead } from '../../assets';
+import { About1, About2, About3, About4, BrandDesigner, DevLead, GraphicDesigner } from '../../assets';
 import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
@@ -48,9 +48,9 @@ export default OurTeam;
 const Content = [
     {
         id: 1,
-        image: TeamLead,
-        name: 'Ajayi Toyese Vlad',
-        role: 'Brand & Graphic Design Associate',
+        image: About1,
+        name: 'Ajayi Vlad',
+        role: 'Brand Designer',
         social: [
             { twitter: '#' },
             { linkedIn: '#' },
@@ -58,9 +58,9 @@ const Content = [
     },
     {
         id: 2,
-        image: GraphicDesigner,
-        name: 'Haris Adeyemo',
-        role: 'Brand & Graphic Design Associate',
+        image: About2,
+        name: 'Victoria Olajide',
+        role: 'Partner, Creative Director',
         social: [
             { twitter: '#' },
             { linkedIn: '#' },
@@ -68,9 +68,9 @@ const Content = [
     },
     {
         id: 3,
-        image: DevLead,
-        name: 'Christy Douglas',
-        role: 'Brand & Graphic Design Associate',
+        image: About3,
+        name: 'Kenneth Iruonagbe',
+        role: 'Partner, Marketing Director',
         social: [
             { twitter: '#' },
             { linkedIn: '#' },
@@ -78,9 +78,9 @@ const Content = [
     },
     {
         id: 4,
-        image: BrandDesigner,
-        name: 'Segun Akanni',
-        role: 'Development Lead',
+        image: About4,
+        name: 'Prince Nwagboso',
+        role: 'Managing Partner',
         social: [
             { twitter: '#' },
             { linkedIn: '#' },

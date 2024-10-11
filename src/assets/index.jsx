@@ -38,6 +38,11 @@ import Blog3Full from './images/blog-3-full.svg';
 import Blog1Image1 from './images/blog-1-image-1.svg';
 import Blog2Image1 from './images/blog-2-image-1.svg';
 import Blog3Image1 from './images/blog-3-image-1.svg';
+import About1 from './images/vlad.png';
+import About2 from './images/victoria.png';
+import About3 from './images/keneth.png';
+import About4 from './images/prince.png';
+
 
 
 export {
@@ -80,5 +85,9 @@ export {
     Blog3Full,
     Blog1Image1,
     Blog2Image1,
-    Blog3Image1
+    Blog3Image1,
+    About1,
+    About2,
+    About3,
+    About4,
 }
