@@ -12,6 +12,7 @@ const Work = () => {
             <Header />
             <HeroContainer
                 title={['Work']}
+                detail={'We partner with businesses to build great brands, develop great products, create stories for themselves, and shape their brand experiences.'}
             />
 
             <div className='grid gap-y-16 px-5 sm:px-20 my-8'>
