@@ -25,7 +25,7 @@ const sendEmail = (formData) => {
     const { first_name, last_name, email, phone_number, type_of_enquiry, country, company_name, project_details } = formData;
 
     const mailOptions = {
-        from: email,
+        from: process.env.USER,
         to: process.env.USER,
         subject: `Message from ${first_name} ${last_name}`,
         html: `
