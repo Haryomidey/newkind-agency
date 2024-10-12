@@ -8,14 +8,16 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.zoho.com',
+    port: 465,
+    secure: true,
     auth: {
         user: process.env.USER,
-        pass: process.env.PASS  
+        pass: process.env.PASS
     }
 });
 
@@ -33,10 +35,10 @@ const sendEmail = (formData) => {
             
             <h3>Inquiry Details</h3>
             <ul>
-            <li><strong>Type of Enquiry:</strong> ${type_of_enquiry}</li>
-            <li><strong>Country:</strong> ${country}</li>
-            <li><strong>Company Name:</strong> ${company_name}</li>
-            <li><strong>Project Details:</strong> ${project_details}</li>
+                <li><strong>Type of Enquiry:</strong> ${type_of_enquiry}</li>
+                <li><strong>Country:</strong> ${country}</li>
+                <li><strong>Company Name:</strong> ${company_name}</li>
+                <li><strong>Project Details:</strong> ${project_details}</li>
             </ul>
         `,
     };
@@ -47,7 +49,6 @@ const sendEmail = (formData) => {
 app.post('/api/contact-us', async (req, res) => {
     try {
         const formData = req.body;
-
         await sendEmail(formData);
 
         res.status(200).json({ 
@@ -56,6 +57,7 @@ app.post('/api/contact-us', async (req, res) => {
         });
 
     } catch (error) {
+        console.error('Error sending email:', error);
         res.status(500).json({ 
             status: false,
             message: 'Failed to send the message. Please try again later.'
