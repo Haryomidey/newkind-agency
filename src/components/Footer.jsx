@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterLogo } from '../assets';
 
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -13,10 +13,21 @@ const Footer = () => {
                 <div className='flex flex-col gap-4'>
                     <img src={FooterLogo} alt="footer logo" className='w-[100px] sm:w-[120px] mb-7' />
                     <div className='flex gap-3'>
-                        <FaFacebookF className='text-lg' />
-                        <FaTwitter className='text-lg' />
-                        <FaInstagram className='text-lg' />
-                        <FaYoutube className='text-lg' />
+                        <Link to='/https://x.com/newkindred?t=8XGmPYFCr9DeRO7aipcgLw&s=09'>
+                            <FaTwitter className='text-lg' />
+                        </Link>
+                        <Link to='/https://web.facebook.com/people/New-Kindred/100094169120206/?rdid=UoZLCH4uGjsn2L8z&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F9WUgoNC7wg3z6hSU%2F%3F_rdc%3D1%26_rdr'>
+                            <FaFacebookF className='text-lg' />
+                        </Link>
+                        <Link to='/https://youtube.com/@wearenewkindred?feature=shared'>
+                            <FaInstagram className='text-lg' />
+                        </Link>
+                        <Link to='/https://www.linkedin.com/company/newkindred/'>
+                            <FaLinkedin className='text-lg' />
+                        </Link>
+                        <Link to='/https://youtube.com/@wearenewkindred?feature=shared'>
+                            <FaYoutube className='text-lg' />
+                        </Link>
                     </div>
                     <a href='mailto:hello@newkindred.com'>hello@newkindred.com</a>
                 </div>

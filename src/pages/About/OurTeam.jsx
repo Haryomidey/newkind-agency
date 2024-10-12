@@ -29,9 +29,9 @@ const OurTeam = () => {
                     ))
                 }
             </div>
-            <div className='pt-20 pb-14 flex items-center justify-center'>
+            {/* <div className='pt-20 pb-14 flex items-center justify-center'>
                 <Button>Shuffle</Button>
-            </div>
+            </div> */}
             <div className='flex items-center justify-center min-h-[400px]'>
                 <div className='w-full h-full grid lg:grid-cols-2 gap-16 pb-4'>
                     <p>At NewKindred, we specialize in building these spaces. Through our approach, we challenge businesses to embody their true essence and become <b>storytellers</b>.</p>
