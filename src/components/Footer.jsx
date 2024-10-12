@@ -28,8 +28,8 @@ const Footer = () => {
                     <Link to='/services'>Services</Link>
                 </div>
 
-                <div className='flex flex-col items-center max-w-[320px]'>
-                    <p className='mb-2'>Get valuable insights, reports and strategy straight to your inbox.</p>
+                <div className='flex flex-col items-center justify-start max-w-[320px]'>
+                    <p className='mb-2 pl-1'>Get valuable insights, reports and strategy straight to your inbox.</p>
                     <div className='flex h-[40px] max-w-full'>
                         <input 
                             type="email" 

@@ -69,18 +69,18 @@ const KindredCaseStudy = () => {
                     </div>
                 </div>
 
-                <div className='w-full min-h-[450px] flex items-center justify-between flex-wrap lg:flex-nowrap sm:gap-5 mt-10 mb-20'>
-                    <div className='w-full lg:w-[49%] h-[450px] overflow-hidden rounded-lg'>
-                        <img src={Work2} alt="" className='min-w-full w-full object-cover' />
+                <div className='w-full min-h-[450px] flex items-center justify-between flex-wrap lg:flex-nowrap gap-5 mt-10 mb-20'>
+                    <div className='w-full lg:w-[49%] overflow-hidden rounded-lg'>
+                        <img src={Work2} alt="" className='min-w-full w-full h-full object-cover' />
                     </div>
-                    <div className='w-full lg:w-[49%] h-[450px] flex flex-col gap-5'>
-                        <div className='h-[220px] bg-black rounded-lg cursor-pointer' onClick={() => handlePlayVideo(videoRef1)}>
-                            <video ref={videoRef1} className='w-full h-full'>
+                    <div className='w-full lg:w-[49%]  flex flex-col gap-5'>
+                        <div className='h-[325px] bg-black rounded-lg cursor-pointer' onClick={() => handlePlayVideo(videoRef1)}>
+                            <video ref={videoRef1} className='min-w-full min-h-full rounded-lg'>
                                 <source src={Video1}/>
                             </video>
                         </div>
-                        <div className='h-[220px] w-full bg-black rounded-lg overflow-hidden'>
-                            <img src={Work3} alt="" className='object-cover' />
+                        <div className='h-[325px] w-full bg-black rounded-lg overflow-hidden'>
+                            <img src={Work3} alt="" className='h-full w-full object-cover' />
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const KindredCaseStudy = () => {
                     </div>
                 </div>
                 <div className='h-[500px] w-full mt-16 mb-5 bg-primary flex items-center justify-center rounded-lg overflow-hidden cursor-pointer' onClick={() => handlePlayVideo(videoRef3)}>
-                    <video ref={videoRef3} className='min-w-full w-full h-full'>
+                    <video ref={videoRef3} className='min-w-full w-full h-[500px]'>
                         <source src={Video3}/>
                     </video>
                 </div>

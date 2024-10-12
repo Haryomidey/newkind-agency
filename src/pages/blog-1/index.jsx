@@ -28,7 +28,7 @@ const BlogOne = () => {
                     <ol className='list-decimal flex justify-between flex-wrap gap-5 pl-5'>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Understand Your Customers and Market</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 It's important to really understand your customers and look at what your competitors are doing.
                                 <br /><br /> 
                                 Knowing what your audience wants and creating high-quality content with fast loading times can greatly improve your visibility on search engines. This not only attracts the right people but also helps your brand stand out against competitors.
@@ -36,7 +36,7 @@ const BlogOne = () => {
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Share Useful Industry Information</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 Share helpful information about your industry with your clients. 
                                 <br /><br />
                                 Big companies, like banks, often do this with articles on their websites. This strategy works well for small businesses too.
@@ -44,7 +44,7 @@ const BlogOne = () => {
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Talk to Your Target Audience</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 With AI, anyone can quickly become a pseudo-expert, leading to a lot of recycled content. 
                                 <br /><br />
                                 The best approach is to talk directly with your customers to understand what they really care about, what are their pain points.
@@ -53,7 +53,7 @@ const BlogOne = () => {
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Focus on Solving Pain Points</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 The solution can be simple. Solve a unique problem for your ideal client in a way that makes their life easier. 
                                 <br /><br />
                                 Make it so compelling that customers can't say no to your service or product. Then share these success stories to establish your expertise.
@@ -61,7 +61,7 @@ const BlogOne = () => {
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Prioritize Quality Content Creation</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 To improve SEO and build your brand online, focus on creating quality content. Search engines like Google value relevant and valuable content. 
                                 <br /><br />
                                 By consistently producing high-quality content that meets your audience's needs, you enhance your website's visibility and keep visitors coming back for more.
@@ -69,13 +69,13 @@ const BlogOne = () => {
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Maintaining Authenticity</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 Stay genuine and avoid shady tactics. These might give you quick visibility but can harm your website's credibility and long-term growth.
                             </p>
                         </li>
                         <li className='sm:w-[48%]'>
                             <h2 className='font-semibold'>Invest in SEO Tools</h2>
-                            <p className='text-xs'>
+                            <p className='text-xs mt-2'>
                                 Invest in tools like SEMRush and Ahrefs to boost your SEO efforts. Plan your company's future and create a content strategy that addresses your ideal clients' buying questions.
                             </p>
                         </li>

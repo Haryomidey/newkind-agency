@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import HeroContainer from '../../components/HeroContainer'
 
 const PrivacyPolicy = () => {
@@ -214,6 +215,7 @@ const PrivacyPolicy = () => {
                 <h1 className='text-2xl font-semibold mt-10'>How To Reach Us</h1>
                 <p className='text-xs mt-5'>Should you have any enquiries or questions about this Privacy Notice or want to exercise your rights set out in this Privacy Notice, you can contact us by sending an email to legal@newkindred.com.</p>
             </div>
+            <Footer />
         </main>
     )
 }

@@ -12,19 +12,19 @@ const OurTeam = () => {
                 {
                     Content.map((content, index) => (
                         <div key={index} className='min-h-[300px]'>
-                            <div className='bg-[#00000071] h-[300px]'>
+                            <div className='bg-[#00000071] h-[400px] lg:h-[350px]'>
                                 <img src={content.image} alt="" className='w-full h-full object-cover' />
                             </div>
                             <h2 className='mt-3'>{content.name}</h2>
                             <p className='text-[10px] my-2'>{content.role}</p>
-                            <div className='flex gap-2'>
+                            {/* <div className='flex gap-2'>
                                 <Link to={content.social[0].twitter}>
                                     <FaSquareXTwitter />
                                 </Link>
                                 <Link to={content.social[0].linkedIn}>
                                     <FaLinkedin />
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                     ))
                 }
