@@ -10,7 +10,7 @@ const OurServices = () => {
             <HeadingTitle>Our Services</HeadingTitle>
             <div className='flex justify-between gap-5 flex-wrap'>
                 <p className='max-w-[750px] text-xs'>We partner with clients to develop memorable brands that create connection and inspire change.</p>
-                <Link to='/services' className='hover:underline text-primary'>See All</Link>
+                {/* <Link to='/services' className='hover:underline text-primary'>See All</Link> */}
             </div>
             <div className='grid sm:grid-cols-2 lg:grid-cols-4 mt-5 gap-1'>
                 {
