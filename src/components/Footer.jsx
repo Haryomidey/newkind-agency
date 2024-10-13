@@ -55,10 +55,12 @@ const Footer = () => {
 
                 <div className='flex flex-col items-center'>
                     <p className='mb-2 text-center'>Want to work with us?</p>
-                    <button className='border-2 border-[#FFBD1AC4] px-6 py-2 rounded-md text-sm hover:bg-white hover:text-[#4f4aec] transition duration-300 ease flex items-center gap-2'>
-                        Start a Project
-                        <FaArrowRightLong />
-                    </button>
+                    <Link to='/contact-us'>
+                        <button className='border-2 border-[#FFBD1AC4] px-6 py-2 rounded-md text-sm hover:bg-white hover:text-[#4f4aec] transition duration-300 ease flex items-center gap-2'>
+                            Start a Project
+                            <FaArrowRightLong />
+                        </button>
+                    </Link>
                 </div>
             </div>
 

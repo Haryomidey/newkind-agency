@@ -58,7 +58,7 @@ const ContactUs = () => {
         if (validateForm()) {
             setLoading(true);
             try {
-                const res = await fetch('http://localhost:3000/api/contact-us', {
+                const res = await fetch('https://newkind-agency.onrender.com/api', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

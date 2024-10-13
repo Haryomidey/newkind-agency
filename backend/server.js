@@ -65,6 +65,10 @@ app.post('/api/contact-us', async (req, res) => {
     }
 });
 
+app.get('/api/contact-us', (req, res) => {
+    res.json({ message: 'Contact us API is working' });
+  });
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
